@@ -25,12 +25,16 @@ MACHINES = {
                         :dfile => './sata4.vdi',
                         :size => 250, # Megabytes
                         :port => 4
-                }
-
-	}
+                },
+                :sata5 => { 
+			:dfile => './sata5.vdi', # Путь, по которому будет создан файл диска                        
+			:size => 250, # Размер диска в мегабайтах      
+			:port => 5 # Номер порта на который будет зацеплен диск},
+	},
 
 		
-  },
+  }
+}
 }
 
 Vagrant.configure("2") do |config|
